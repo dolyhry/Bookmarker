@@ -68,10 +68,12 @@ function validateInput(element) {
     console.log("match");
     element.classList.add("is-valid");
     element.classList.remove("is-invalid");
+    element.nextElementSibling.classList.add("d-none");
   } else {
     console.log("not match!");
     element.classList.add("is-invalid");
     element.classList.remove("is-valid");
+    element.nextElementSibling.classList.remove("d-none");
   }
 }
 
